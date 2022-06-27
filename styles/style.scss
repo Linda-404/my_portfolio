@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Syne:wght@400;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Outfit&display=swap');
+
+@import "partials/variables";
+@import "partials/typography";
+@import "partials/base";
+@import "partials/header";
+@import "partials/footer";
+@import "partials/card";
+@import "partials/links";
+@import "partials/lists";
+@import "partials/index";
+
+
+.meme__container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+

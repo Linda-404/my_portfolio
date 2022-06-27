@@ -1,0 +1,39 @@
+* {
+    font-family: 'Outfit', sans-serif;
+    font-size: 30px;
+    color: $text-color;
+}
+
+
+h1 {
+    font-family: 'Syne', sans-serif;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 800;
+    font-size: clamp(0.6rem, 4vw, 2rem);
+    letter-spacing: 2px; 
+}
+h2 {
+   font-size: clamp(0.8rem, 4vw, 1rem); 
+}
+
+h3 {
+    font-size: clamp(0.6rem, 4vw, 0.8rem);
+}
+
+h4 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: clamp(0.4rem, 2vw, 0.6rem);
+    letter-spacing: 2px;
+}
+
+h5 {
+    font-size: clamp(0.4rem, 2vw, 0.6rem);
+    letter-spacing: 2px;
+    color: $darkgrey;
+    margin: 0.5rem;
+}
+
+p {
+    font-size: clamp(0.5rem, 2vw, 0.6rem);
+    letter-spacing: 1px;
+}

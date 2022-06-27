@@ -1,0 +1,19 @@
+.card__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: $background-color;
+    box-shadow: $box-shadow;
+    width: calc(min(400px, 80vw));
+    min-height: 600px;
+    border-radius: 10px;
+    margin: 0.5rem;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

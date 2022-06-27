@@ -1,0 +1,15 @@
+ul {
+    li {
+        font-size: clamp(0.6rem, 2vw, 0.8rem);
+    }
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    li {
+        padding: 0.5rem;
+    }
+}
