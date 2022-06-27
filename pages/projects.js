@@ -8,7 +8,7 @@ import SubTitle from "../components/SubTitle";
 import Paragraph from "../components/Paragraph";
 import SpoilrImg from "../public/images/screenshot_spoilralert.png";
 import WitchImg from "../public/images/screenshot_witchescaultron.png";
-import PeezyImg from "../public/images/Screenshot_peezy.png";
+import PeezyImg from "../public/images/screenshot_peezy.png";
 import StyleguideImg from "../public/images/screenshot_styleguide.png";
 import Footer from "../components/layout/Footer";
 
