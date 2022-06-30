@@ -54,24 +54,22 @@ export default function Home() {
                 </div>
               </div>
               <div className="card__link__container">
-                <button>
-                  <a
-                    href="https://dev--spoilralert.netlify.app/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Live site
-                  </a>
-                </button>
-                <button>
-                  <a
-                    href="https://github.com/spoilralert/spoilralert"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Github
-                  </a>
-                </button>
+                <a
+                  href="https://dev--spoilralert.netlify.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="button"
+                >
+                  Live site
+                </a>
+                <a
+                  href="https://github.com/spoilralert/spoilralert"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="button"
+                >
+                  Github
+                </a>
               </div>
             </div>
 
@@ -97,24 +95,22 @@ export default function Home() {
                 </div>
               </div>
               <div className="card__link__container">
-                <button>
-                  <a
-                    href="https://witches-cauldron.netlify.app/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Live site
-                  </a>
-                </button>
-                <button>
-                  <a
-                    href="https://github.com/Linda-404/witches-cauldron"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Github
-                  </a>
-                </button>
+                <a
+                  href="https://witches-cauldron.netlify.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="button"
+                >
+                  Live site
+                </a>
+                <a
+                  href="https://github.com/Linda-404/witches-cauldron"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="button"
+                >
+                  Github
+                </a>
               </div>
             </div>
 
@@ -142,24 +138,22 @@ export default function Home() {
                 </div>
               </div>
               <div className="card__link__container">
-                <button>
-                  <a
-                    href="https://peezy-shoes.netlify.app/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Live site
-                  </a>
-                </button>
-                <button>
-                  <a
-                    href="https://github.com/Linda-404/peezy"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Github
-                  </a>
-                </button>
+                <a
+                  href="https://peezy-shoes.netlify.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="button"
+                >
+                  Live site
+                </a>
+                <a
+                  href="https://github.com/Linda-404/peezy"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="button"
+                >
+                  Github
+                </a>
               </div>
             </div>
 
@@ -182,24 +176,22 @@ export default function Home() {
                 </div>
               </div>
               <div className="card__link__container">
-                <button>
-                  <a
-                    href="https://styleguide-linda-nilsson.netlify.app/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Live site
-                  </a>
-                </button>
-                <button>
-                  <a
-                    href="https://github.com/Linda-404/style_guide"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Github
-                  </a>
-                </button>
+                <a
+                  href="https://styleguide-linda-nilsson.netlify.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="button"
+                >
+                  Live site
+                </a>
+                <a
+                  href="https://github.com/Linda-404/style_guide"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="button"
+                >
+                  Github
+                </a>
               </div>
             </div>
           </div>
