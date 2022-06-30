@@ -45,14 +45,11 @@ a {
 button, .button {
     margin: 0.5rem;
     text-align: center;
-    // padding: 0.5rem;
     text-decoration: none;
     background-color: $lightpink;
     border: 2px solid $text-color;
     border-radius: 0.2rem;
-    // width: calc(min(200px, 30vw));
-    width: calc(min(7rem, 30vw));
-    // width: calc(min(7rem, 40vw));
+    width: calc(min(7rem, 35vw));
     box-shadow: 0.2rem 0.2rem $text-color;
     transition: box-shadow 0.3s;
 

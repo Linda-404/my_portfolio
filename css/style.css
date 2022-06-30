@@ -156,7 +156,7 @@ button, .button {
   background-color: #fee6e3;
   border: 2px solid #141414;
   border-radius: 0.2rem;
-  width: calc(min(7rem, 30vw));
+  width: calc(min(7rem, 35vw));
   box-shadow: 0.2rem 0.2rem #141414;
   transition: box-shadow 0.3s;
   display: flex;
