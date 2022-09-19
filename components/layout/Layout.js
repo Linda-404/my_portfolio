@@ -5,6 +5,7 @@ export default function Layout({ children }) {
   return (
     <>
       {/* <Header /> */}
+      {/* <div id="invertedcursor"></div> */}
       <div className="layout__container">{children}</div>
 
       {/* <Footer /> */}

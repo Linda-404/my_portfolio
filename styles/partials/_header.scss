@@ -2,5 +2,17 @@ header {
     padding: 0.5rem;
     
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+
+    .logo_dialog {
+        display: flex;
+    }
+
+    .dialog {
+        box-shadow: none;
+        .left-point {
+            z-index: -1;
+        }
+    }
+    
 }

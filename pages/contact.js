@@ -10,7 +10,7 @@ export default function Contact() {
       <Head title="Contact" />
       <Header />
       <main>
-        <Heading title="Contact" />
+        {/* <Heading title="Contact" /> */}
         <section className="contact">
           <ul>
             <li>

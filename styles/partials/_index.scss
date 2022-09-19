@@ -1,5 +1,4 @@
 .main__container {
-    margin-top: 2rem;
     width: calc(min(1000px, 90vw));
     height: fit-content;
     padding: 1rem;
@@ -9,31 +8,44 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    a {
+        font-size: 3rem;
+        font-size: clamp(2rem, 4vw, 5rem);
+        padding: 1rem;
+        letter-spacing: 5px;
+        text-align: center;
+
+        transition: color 0.3s ease-in-out;
+        &:hover {
+            color: $yellow;
+        }
+    }
 }
 .main__container__content {
     display: flex;
     
-    h1 {
-        line-height: clamp(1rem, 5vw, 5rem);
-        text-align: right;
-        align-self: flex-end; 
-    }
+    // h1 {
+    //     line-height: clamp(1rem, 5vw, 5rem);
+    //     text-align: right;
+    //     align-self: flex-end; 
+    // }
 }
 .main__logo {
     background-color: $white;
     width: fit-content;
-    width: 50%;
+    width: 40%;
     padding: 1rem;
     border-radius: 50%;
-    box-shadow: $box-shadow;
 }
 
 .arrow__container {
-    margin-top: -1.5rem;
-    width: 40%;
+    // margin-top: -1.5rem;
+    width: 50%;
+    transform: scaleX(-1);
+    opacity: 50%;
 
     display: flex;
-    justify-content: flex-end;
 }
 
 .dialog__container {
@@ -42,8 +54,6 @@
 
     h4 {
         align-self: flex-end;
-        padding-right: 0.5rem;
-        letter-spacing: 3px;
     }
 }
 
@@ -51,15 +61,20 @@
     height: fit-content;
     width: fit-content;
     background-color: black;
+    background-color: $hotpink;
     position: absolute;
     position: relative;
     border-radius: 10px;
     margin-left: min(1rem, 0.5rem);
     padding: 0.2rem 0.2rem 0.2rem 0rem;
+    padding-left: 1rem;
     box-shadow: $box-shadow;
 
     h1 {
         color: $white;
+        line-height: clamp(1rem, 5vw, 5rem);
+        text-align: right;
+        align-self: flex-end; 
     }
     
 }
@@ -69,7 +84,7 @@
 	height: 0;
 	border-left: 2vh solid transparent;
 	border-right: 2vh solid transparent;
-	border-top: 10vh solid black;
+	border-top: 10vh solid $hotpink;
 	position: absolute;
 	top: 45%;
     top: 30%;

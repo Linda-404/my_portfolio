@@ -59,9 +59,7 @@ button, .button {
 
     padding: 0.5rem 0.7rem;
     
-    // a {
-    //     padding: 0.5rem 0.7rem;
-    // }
+    
     &:hover {
         cursor: pointer;
         box-shadow: none;
@@ -72,16 +70,3 @@ button, .button {
     }
 }
 
-
-
-
-// .card__link {
-//     font-size: clamp(0.6rem, 2vw, 0.8rem);
-//     text-decoration: none;
-//     background-color: #fee6e3;
-//     border: 2px solid $text-color;
-//     border-radius: 0.2rem;
-//     width: calc(min(160px, 25vw));
-//     box-shadow: 0.2rem 0.2rem $text-color;
-//     transition: box-shadow 0.3s;    
-// }

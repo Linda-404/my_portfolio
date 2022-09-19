@@ -1,3 +1,5 @@
+// colors
+
 $background-color: #e9e5e5;
 $text-color: #141414;
 $white: #F1F1F1;
@@ -8,5 +10,9 @@ $yellow: #FBA92C;
 $lightgrey: #c6c3c3;
 $darkgrey: #565656;
 
+
+// Other
+
 $box-shadow: 12px 12px 24px $lightgrey, -12px -12px 24px $white;
+// $box-shadow: 6px 6px 12px $text-color, -4px -4px 12px $darkgrey;
 $box-shadow-reverse: 12px 12px 24px $white, -12px -12px 24px $lightgrey;
