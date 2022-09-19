@@ -3,32 +3,32 @@ a {
     font-size: clamp(0.6rem, 2vw, 0.8rem);
 }
 
-.header__link {
-    background-color: $background-color;
-    box-shadow: $box-shadow;
-    border-radius: 0.2rem;
-    width: clamp(2rem, 4vw, 4rem);
-    height: clamp(2rem, 4vw, 4rem);
-    transition: box-shadow 0.3s;
-    transition: background-color 0.5s;
+// .header__link {
+//     background-color: $background-color;
+//     box-shadow: $box-shadow;
+//     border-radius: 0.2rem;
+//     width: clamp(2rem, 4vw, 4rem);
+//     height: clamp(2rem, 4vw, 4rem);
+//     transition: box-shadow 0.3s;
+//     transition: background-color 0.5s;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
 
-    a {
-        font-size: clamp(0.8rem, 2vw, 1rem);
-        padding: 1rem;
-    }
+//     a {
+//         font-size: clamp(0.8rem, 2vw, 1rem);
+//         padding: 1rem;
+//     }
 
-    &:hover {
-        box-shadow: none;
-        background-color: $lightgrey;
-    }
-    &:active {
-        box-shadow: $box-shadow-reverse;
-    }
-}
+//     &:hover {
+//         box-shadow: none;
+//         background-color: $lightgrey;
+//     }
+//     &:active {
+//         box-shadow: $box-shadow-reverse;
+//     }
+// }
 
 .index__nav {
     display: flex;
