@@ -10,8 +10,14 @@ header {
 
     .dialog {
         box-shadow: none;
+
+        h1 {
+            font-size: clamp(0.6rem, 2vw, 2rem);
+            line-height: 0.6rem;
+        }
         .left-point {
             z-index: -1;
+            border-top: 5vh solid $hotpink;
         }
     }
     
