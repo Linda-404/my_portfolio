@@ -60,10 +60,10 @@ export default function Home() {
                       <SubTitle title="Description:" />
                       <Paragraph
                         text="A movie db site with user added spoilers. 
-                  Users can search for a specific title and choose from a dropdown of suggested titles. 
-                  If title doesn't exist in spoilralert db, they can search from full movie db and add request or spoilr (if logged in). 
-                  Spoilers are by default hidden so the site can also be used just as a regular movie db. 
-                  I built this as my project exam for my studies in front-end development."
+                              Users can search for a specific title and choose from a dropdown of suggested titles. 
+                              If title doesn't exist in spoilralert db, they can search from full movie db and add request or spoilr (if logged in). 
+                              Spoilers are by default hidden so the site can also be used just as a regular movie db. 
+                              I built this as my project exam for my studies in front-end development."
                       />
                     </div>
                   </div>
@@ -122,6 +122,46 @@ export default function Home() {
                   </a>
                   <a
                     href="https://github.com/Linda-404/badinfluencemom_blog"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="button"
+                  >
+                    Github
+                  </a>
+                </div>
+              </div>
+
+              <div className="card">
+                <div>
+                  <Image
+                    src={StyleguideImg}
+                    width="500"
+                    height="250"
+                    alt="screenshot styleguide"
+                  />
+                  <div className="card__text">
+                    <Title title="Styleguide" />
+                    <div>
+                      <SubTitle title="Built with:" />
+                      <Paragraph text="React, CSS" />
+                    </div>
+                    <div>
+                      <SubTitle title="Description:" />
+                      <Paragraph text="A styleguide for a made up home decor site. Users can select style from menu to get details." />
+                    </div>
+                  </div>
+                </div>
+                <div className="card__link__container">
+                  <a
+                    href="https://styleguide-linda-nilsson.netlify.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="button"
+                  >
+                    Live site
+                  </a>
+                  <a
+                    href="https://github.com/Linda-404/style_guide"
                     target="_blank"
                     rel="noreferrer"
                     className="button"
@@ -210,46 +250,6 @@ export default function Home() {
                   </a>
                   <a
                     href="https://github.com/Linda-404/peezy"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="button"
-                  >
-                    Github
-                  </a>
-                </div>
-              </div>
-
-              <div className="card">
-                <div>
-                  <Image
-                    src={StyleguideImg}
-                    width="500"
-                    height="250"
-                    alt="screenshot styleguide"
-                  />
-                  <div className="card__text">
-                    <Title title="Styleguide" />
-                    <div>
-                      <SubTitle title="Built with:" />
-                      <Paragraph text="React, CSS" />
-                    </div>
-                    <div>
-                      <SubTitle title="Description:" />
-                      <Paragraph text="A styleguide for a made up home decor site. Users can select style from menu to get details." />
-                    </div>
-                  </div>
-                </div>
-                <div className="card__link__container">
-                  <a
-                    href="https://styleguide-linda-nilsson.netlify.app/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="button"
-                  >
-                    Live site
-                  </a>
-                  <a
-                    href="https://github.com/Linda-404/style_guide"
                     target="_blank"
                     rel="noreferrer"
                     className="button"
