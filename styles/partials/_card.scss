@@ -5,15 +5,33 @@
 }
 
 .card {
-    background-color: $background-color;
-    box-shadow: $box-shadow;
-    width: calc(min(400px, 80vw));
+    // background-color: $background-color;
+    // box-shadow: $box-shadow;
+    width: calc(min(500px, 90vw));
     min-height: 600px;
-    border-radius: 10px;
-    margin: 0.5rem;
-    padding: 0.5rem;
+    // border-radius: 10px;
+    margin: 1rem;
+    // padding: 0.5rem;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    position: relative;
 }
+
+.card__text {
+    padding: 0.5rem;
+}
+
+// .card:before {
+//     content: "";
+//     width: calc(min(400px, 80vw));
+//     height: 600px;
+//     position: absolute;
+//     top: -20px;
+//     right: -20px;
+//     border: 4px dashed $text-color;
+//     background-image: repeating-linear-gradient(-24deg, transparent, transparent 4px, $text-color 0, $text-color 5px);
+//     z-index: -1;
+// }
