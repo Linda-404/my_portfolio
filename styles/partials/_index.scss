@@ -95,3 +95,11 @@
 	left: -5%;
 	transform: rotate(60deg);
 }
+
+@media screen and (max-width: 850px) {
+    .main__container {
+        a:hover {
+            color: $text-color;
+        }
+    }
+}
