@@ -70,7 +70,7 @@ export default function Home() {
                   rel="noreferrer"
                   className="button"
                 >
-                  LIVE SITE
+                  Site
                 </a>
                 <a
                   href="https://github.com/spoilralert/spoilralert"
@@ -78,7 +78,7 @@ export default function Home() {
                   rel="noreferrer"
                   className="button"
                 >
-                  GITHUB
+                  Github
                 </a>
               </div>
             </div>
@@ -113,7 +113,7 @@ export default function Home() {
                   rel="noreferrer"
                   className="button"
                 >
-                  Live site
+                  Site
                 </a>
                 <a
                   href="https://github.com/Linda-404/badinfluencemom_blog"
@@ -153,7 +153,7 @@ export default function Home() {
                   rel="noreferrer"
                   className="button"
                 >
-                  Live site
+                  Site
                 </a>
                 <a
                   href="https://github.com/Linda-404/style_guide"
@@ -196,7 +196,7 @@ export default function Home() {
                   rel="noreferrer"
                   className="button"
                 >
-                  Live site
+                  Site
                 </a>
                 <a
                   href="https://github.com/Linda-404/witches-cauldron"
@@ -241,7 +241,7 @@ export default function Home() {
                   rel="noreferrer"
                   className="button"
                 >
-                  Live site
+                  Site
                 </a>
                 <a
                   href="https://github.com/Linda-404/peezy"
