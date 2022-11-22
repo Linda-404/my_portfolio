@@ -1,0 +1,59 @@
+.dialog__container {
+    display: flex;
+    flex-direction: column;
+
+    h4 {
+        align-self: flex-end;
+    }
+}
+
+.dialog{
+    height: fit-content;
+    width: fit-content;
+    background-color: black;
+    background-color: $sharppink;
+    position: absolute;
+    position: relative;
+    border-radius: 10px;
+    margin-left: min(1rem, 0.5rem);
+    margin-left: 1rem;
+    padding: 0.2rem 0.2rem 0.2rem 0rem;
+    padding-left: 1rem;
+    padding-left: calc(min(1rem, 5vw));
+
+    h1 {
+        color: $white;
+        line-height: clamp(1rem, 5vw, 5rem);
+        text-align: right;
+        align-self: flex-end; 
+    }
+    
+}
+
+.left-point{
+	width: 0;
+	height: 0;
+	border-left: 2vh solid transparent;
+	border-right: 2vh solid transparent;
+	border-top: 10vh solid $sharppink;
+	position: absolute;
+	top: 45%;
+    top: 30%;
+	left: -5%;
+	transform: rotate(60deg);
+    z-index: -10;
+}
+
+.dialog_box {
+    // background-color: $brightyellow;
+    // border: 3px dashed $green;
+    border-left: 2px solid $green;
+    padding: 0rem 0.5rem;
+
+    p {
+        font-weight: bold;
+        color: $white;
+        letter-spacing: 2px;
+        margin: 0;
+    }
+}

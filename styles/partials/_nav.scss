@@ -1,49 +1,77 @@
 nav {
+    display: flex;
+    flex-direction: column;
     z-index: 2;
 
     a {
         font-family: 'Space Mono', monospace;
         font-weight: 700;
-        margin: 0.5rem;
-        padding: 0.5rem;
+        text-shadow: 1px 1px $text-color;
+        margin: 0.5rem 0rem;
+        padding: 0.5rem 0rem;
     }
 }
 
 .active {
-    color: $hotpink;
+    color: $brightyellow;
 }
 
 nav label, #hamburger {
     display: none;
 }
 
-@media screen and (max-width: 850px) {
+nav label {
+    color: $white;
+    text-shadow: 3px 3px $text-color;
+    font-size: 1.5rem;
+
+    display: inline-block;
+    align-self: flex-end;
+
+    cursor: pointer;
+}
+
+#nav-items {
+    display: none;
+}
+
+nav input:checked ~ #nav-items {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    z-index: 10;
+}
+
+@media screen and (min-width: 850px) {
     nav {
-        display: flex;
-        flex-direction: column;
+        flex-direction: row-reverse;
+
+        label {
+            align-self: flex-start;
+        }
 
         a {
-            margin: 0.5rem 0rem;
-            padding: 0.5rem 0rem;
+            margin: 0 0.5rem;
+            padding: 0 0.5rem;
         }
-    }
-
-    nav label {
-        display: inline-block;
-        align-self: flex-end;
-        font-size: 1.5rem;
-
-        cursor: pointer;
-    }
-
-    #nav-items {
-        display: none;
     }
 
     nav input:checked ~ #nav-items {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         text-align: right;
         z-index: 10;
     }
 }
+
+
+
+// nav {
+//     display: flex;
+//     flex-direction: column;
+
+//     a {
+//         margin: 0.5rem 0rem;
+//         padding: 0.5rem 0rem;
+//     }
+// }

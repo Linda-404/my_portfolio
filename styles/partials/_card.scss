@@ -5,13 +5,14 @@
 }
 
 .card {
-    // background-color: $background-color;
-    // box-shadow: $box-shadow;
+    background-color: $background-color;
+    box-shadow: 0.2rem 0.2rem $text-color;
+    border: 2px solid $text-color;
+
     width: calc(min(500px, 90vw));
     min-height: 600px;
-    // border-radius: 10px;
     margin: 1rem;
-    // padding: 0.5rem;
+    
 
     display: flex;
     flex-direction: column;
@@ -23,15 +24,3 @@
 .card__text {
     padding: 0.5rem;
 }
-
-// .card:before {
-//     content: "";
-//     width: calc(min(400px, 80vw));
-//     height: 600px;
-//     position: absolute;
-//     top: -20px;
-//     right: -20px;
-//     border: 4px dashed $text-color;
-//     background-image: repeating-linear-gradient(-24deg, transparent, transparent 4px, $text-color 0, $text-color 5px);
-//     z-index: -1;
-// }

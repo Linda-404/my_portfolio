@@ -28,15 +28,18 @@ export default function Home() {
       <main>
         <div className="main__container">
           <div className="main__container__content">
-            <div className="main__logo">
-              <Image
-                src={Logo}
-                alt="personal logo"
-                width="400"
-                height="400"
-                className="logo"
-              />
+            <div className="main__logo__container">
+              <div className="main__logo">
+                <Image
+                  src={Logo}
+                  alt="personal logo"
+                  width="400"
+                  height="400"
+                  className="logo"
+                />
+              </div>
             </div>
+
             <div className="dialog__container">
               <div className="dialog">
                 <Heading title="Hello, I´m Linda" />
@@ -51,9 +54,15 @@ export default function Home() {
           <div className="arrow__container">
             <Image src={Arrow} alt="arrow" width="50" height="100" />
           </div>
-          <Link href="/about">About Me</Link>
-          <Link href="/projects">Projects</Link>
-          <Link href="/contact">Contact</Link>
+          <Link href="/about">
+            <a className="link">ABOUT ME</a>
+          </Link>
+          <Link href="/projects">
+            <a className="link">PROJECTS</a>
+          </Link>
+          <Link href="/contact">
+            <a className="link">CONTACT</a>
+          </Link>
 
           {/* <nav className="index__nav">
             <button>
