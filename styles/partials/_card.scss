@@ -12,6 +12,7 @@
     width: calc(min(500px, 90vw));
     min-height: 600px;
     margin: 1rem;
+    margin: calc(min(1rem, 2vw));
     
 
     display: flex;

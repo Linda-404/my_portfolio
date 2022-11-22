@@ -19,11 +19,8 @@ export default function Home() {
     <Layout>
       <Head title="Projects" />
       <Header />
-      {/* <div className="wrapper"> */}
       <main>
-        {/* <Heading title="Projects" /> */}
         {/* <Image src={DoodleCasette} alt="doodle" width="400" height="500" /> */}
-        {/* <div className="lay"> */}
         <section>
           <div className="dialog_box">
             <p>
@@ -254,10 +251,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* </div> */}
       </main>
-      {/* </div> */}
-
       <Footer />
     </Layout>
   );
