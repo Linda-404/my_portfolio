@@ -37,5 +37,11 @@
     justify-content: center;
 }
 
+.star_container {
+    width: calc(min(20px, 2vw));
+    display: flex;
+    align-items: center;
+}
+
 
 

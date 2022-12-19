@@ -32,19 +32,19 @@ export default function Home() {
           <div className="index_container">
             <h1 className="index_h1">WEB</h1>
             <div className="index_sub">
-              <div>
+              <div className="star_container">
                 <Image src={Star} alt="icon star of light" />
               </div>
               <h6>Visual</h6>
-              <div>
+              <div className="star_container">
                 <Image src={Star} alt="icon star of light" />
               </div>
               <h6>Interaction</h6>
-              <div>
+              <div className="star_container">
                 <Image src={Star} alt="icon star of light" />
               </div>
               <h6>Creative</h6>
-              <div>
+              <div className="star_container">
                 <Image src={Star} alt="icon star of light" />
               </div>
             </div>
