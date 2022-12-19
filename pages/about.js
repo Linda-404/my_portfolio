@@ -18,7 +18,6 @@ export default function About() {
       <Head title="About Me" />
       <Header />
       <main>
-        {/* <Image src={DoodleLightning} alt="doodle" width="400" height="500" /> */}
         <div className="flex_wrapper">
           <div className="heading_container">
             <h1>
@@ -49,20 +48,12 @@ export default function About() {
                 </p>
                 <p>
                   I desided after working as a vet tec and receptionist for 9
-                  years, that I wanted to challenge myself and persue an
+                  years, that I wanted to challenge myself and pursue an
                   interest that had been linguring for quite some time:{" "}
                   <span>webdesign.</span> I choose the front-end studies as I am
-                  both intrested in designing and coding so I wanted to get an
-                  intruductury to both subjects.
+                  both interested in designing and coding so I wanted to get an
+                  introductory to both subjects.
                 </p>
-                {/* <p>
-                  I must admit, I had no idea what I was getting myself into, as
-                  I have zero experience prior and was a bit overwhelmed by the
-                  scope of it all. But my <span>drive</span> and{" "}
-                  <span>curiosity</span> got me through and I started to really
-                  love it as I got more experience.
-                </p> */}
-                {/* <p>As I progressed my interests leaned more to designing than coding</p> */}
               </div>
             </section>
 
@@ -153,28 +144,13 @@ export default function About() {
               <div>
                 <div>
                   <h3>What am I looking for?</h3>
-                  {/* <p>
-                    So I´m looking for a job were I can proceed to build on my
-                    webdesign skills. I would love to be a part of UX/UI in any
-                    stage of the process really and find the right design
-                    solutions.
-                  </p>
-                  <p>
-                    I´m looking for a place that share my work ethic and value
-                    of personal growth
-                  </p> */}
                   <p>
                     I´m looking for a place were I can continue to grow and be
                     creative. Where I can be part of solving problems and design
                     great solutions for the users in mind.
                   </p>
-                  {/* <p>The opportunity to build on my skills and </p> */}
                 </div>
                 <div>
-                  {/* <h3>What do you get?</h3>
-                  <p>A dedicated team mate with a slight caffeine addiction</p>
-                  <p>An introverted extrovert that laugh at her own jokes</p> */}
-
                   <h3>Work ethics and Values:</h3>
                   <p>
                     I think its important to always stay <span>positive</span>{" "}
@@ -182,9 +158,6 @@ export default function About() {
                     bond with co workers, as they are practically your second
                     family.
                   </p>
-                  {/* <p>
-                    I value humour, dedication to ones work and a healthy balance bet.
-                  </p> */}
                   <p>
                     <span>Open, honest and trustworthy</span>
                   </p>
