@@ -42,11 +42,11 @@ export default function Home() {
           <div className="content_container">
             <div className="card__container">
               <div className="card_title">
-                <div>
+                <div className="star_container">
                   <Image src={Star} alt="icon star of light" />
                 </div>
                 <h2>Design examples</h2>
-                <div>
+                <div className="star_container">
                   <Image src={Star} alt="icon star of light" />
                 </div>
               </div>
@@ -64,11 +64,11 @@ export default function Home() {
 
             <div className="card__container">
               <div className="card_title">
-                <div>
+                <div className="star_container">
                   <Image src={Star} alt="icon star of light" />
                 </div>
                 <h2>Coded examples</h2>
-                <div>
+                <div className="star_container">
                   <Image src={Star} alt="icon star of light" />
                 </div>
               </div>
