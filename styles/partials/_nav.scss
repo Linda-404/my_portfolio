@@ -1,19 +1,27 @@
 nav {
+    // height: 2.5rem;
     display: flex;
     flex-direction: column;
     z-index: 2;
+    // background-color: $pink;
+    // padding: 0.5rem 3rem;
+    // padding: calc(min(0.5rem, 1vw)) calc(min(3rem, 4vw));
+    // background-color: $pink;
+    // padding: calc(min(0.5rem, 1vw)) calc(min(3rem, 4vw));
+    // overflow: hidden;
+
+    height: calc(min(2.5rem, 15vw));
 
     a {
-        font-family: 'Space Mono', monospace;
-        font-weight: 700;
-        text-shadow: 1px 1px $text-color;
+        font-weight: 400;
         margin: 0.5rem 0rem;
         padding: 0.5rem 0rem;
+        line-height: 0.5;
     }
 }
 
 .active {
-    color: $brightyellow;
+    border-bottom: 2px solid $pink;
 }
 
 nav label, #hamburger {
@@ -21,9 +29,19 @@ nav label, #hamburger {
 }
 
 nav label {
-    color: $white;
-    text-shadow: 3px 3px $text-color;
+    background-color: $pink;
+    padding: 0 calc(min(3rem, 3vw));
+    // padding-top: 0.5rem;
+    // padding: calc(min(0.5rem, 1vw)) calc(min(3rem, 3vw));
+    // padding-top: calc(min(0.5rem, 1vw));
+    // padding-left: calc(min(3rem, 3vw));
+    // padding-right: calc(min(3rem, 3vw));
+    color: $red;
     font-size: 1.5rem;
+    height: calc(min(2.5rem, 15vw));
+    // line-height: 2;
+
+    // line-height: clamp(1rem, 10vh, 3rem);
 
     display: inline-block;
     align-self: flex-end;
@@ -32,14 +50,23 @@ nav label {
 }
 
 #nav-items {
+    background-color: $red;
+    border-left: 3px solid $pink;
+    border-top: 3px solid $pink;
+    border-bottom: 3px solid $pink;
+    border-radius: 50px 0 0 50px;
+    
+    padding: calc(min(0.5rem, 1vw)) calc(min(3rem, 4vw));
+    padding: calc(min(0.5rem, 3vw)) calc(min(3rem, 6vw));
     display: none;
 }
 
 nav input:checked ~ #nav-items {
     display: flex;
     flex-direction: column;
-    text-align: right;
+    text-align: center;
     z-index: 10;
+    // width: 21rem;
 }
 
 @media screen and (min-width: 850px) {
@@ -61,6 +88,14 @@ nav input:checked ~ #nav-items {
         flex-direction: row;
         text-align: right;
         z-index: 10;
+    }
+
+    #nav-items {
+        margin-top: 0.5rem;
+        border-left: none;
+        border-top: none;
+        border-bottom: none;
+        border-radius: none;
     }
 }
 

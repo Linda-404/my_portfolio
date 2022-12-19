@@ -3,8 +3,9 @@ import Head from "../components/layout/Head";
 import Header from "../components/layout/Header";
 import Heading from "../components/Heading";
 import Image from "next/image";
-import Logo from "../public/images/logo1.png";
+import Logo from "../public/images/logo.svg";
 import Arrow from "../public/images/arrow_down.png";
+import Star from "../public/images/icon_staroflight.png";
 import Footer from "../components/layout/Footer";
 import Link from "next/link";
 
@@ -23,62 +24,39 @@ export default function Home() {
   return (
     <Layout>
       <Head title="Home" />
-      {/* <Header /> */}
+      <Header />
       {/* <div id="invertedcursor"></div> */}
       <main>
-        <div className="main__container">
-          <div className="main__container__content">
-            <div className="main__logo__container">
-              <div className="main__logo">
-                <Image
-                  src={Logo}
-                  alt="personal logo"
-                  width="400"
-                  height="400"
-                  className="logo"
-                />
+        {/* <Image src={Arrow} alt="arrow" width="50" height="100" /> */}
+        <div className="index_wrapper">
+          <div className="index_container">
+            <h1 className="index_h1">WEB</h1>
+            <div className="index_sub">
+              <div>
+                <Image src={Star} alt="icon star of light" />
+              </div>
+              <h6>Visual</h6>
+              <div>
+                <Image src={Star} alt="icon star of light" />
+              </div>
+              <h6>Interaction</h6>
+              <div>
+                <Image src={Star} alt="icon star of light" />
+              </div>
+              <h6>Creative</h6>
+              <div>
+                <Image src={Star} alt="icon star of light" />
               </div>
             </div>
-
-            <div className="dialog__container">
-              <div className="dialog">
-                <Heading title="Hello, I´m Linda" />
-                <div className="left-point"></div>
-              </div>
-
-              <h4>Webdesigner.</h4>
-            </div>
+            <h1 className="index_h1">DESIGNER</h1>
           </div>
-          <div></div>
-
-          <div className="arrow__container">
-            <Image src={Arrow} alt="arrow" width="50" height="100" />
-          </div>
-          <Link href="/about">
-            <a className="link">ABOUT ME</a>
-          </Link>
-          <Link href="/projects">
-            <a className="link">PROJECTS</a>
-          </Link>
-          <Link href="/contact">
-            <a className="link">CONTACT</a>
-          </Link>
-
-          {/* <nav className="index__nav">
-            <button>
-              <Link href="/about">About Me</Link>
-            </button>
-            <button>
-              <Link href="/projects">Projects</Link>
-            </button>
-            <button>
-              <Link href="/contact">Contact</Link>
-            </button>
-          </nav> */}
+          {/* <div className="logo_index__container">
+            <Logo src={Logo} id="logo_index" />
+          </div> */}
         </div>
       </main>
 
-      <Footer />
+      {/* <Footer /> */}
     </Layout>
   );
 }

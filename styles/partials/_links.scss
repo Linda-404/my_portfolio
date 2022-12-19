@@ -8,21 +8,18 @@ a {
     }
 }
 
-.index__nav {
-    display: flex;
-    flex-direction: column;
-    align-self: flex-end;
-}
+// .index__nav {
+//     display: flex;
+//     flex-direction: column;
+//     align-self: flex-end;
+// }
 
-.card__link__container {
-    display: flex;
-    justify-content: space-between;
-}
+
 
 
 button, .button {
-    background-color: $purple;
-    color: $white;
+    background-color: $pink;
+    color: $text-color;
     box-shadow: 0.1rem 0.1rem $text-color;
     transition: box-shadow 0.3s;
 
@@ -30,10 +27,10 @@ button, .button {
     text-align: center;
     text-decoration: none;
     letter-spacing: 4px;
-    text-shadow: -1px -1px $text-color;
+    // text-shadow: -1px -1px $text-color;
     
     border: 2px solid $text-color;
-    width: calc(min(7rem, 35vw));
+    width: calc(min(7rem, 33vw));
     
 
     display: flex;

@@ -16,9 +16,15 @@ $blue: #66CAF2;
 $green: #51A64E;
 $brightyellow: #F2E852;
 
+$red: #B7121F;
+$pink: #FFC1CC;
+$darkbrown: #260808;
+
 
 // Other
 
 $box-shadow: 12px 12px 24px $lightgrey, -12px -12px 24px $white;
 // $box-shadow: 6px 6px 12px $text-color, -4px -4px 12px $darkgrey;
 $box-shadow-reverse: 12px 12px 24px $white, -12px -12px 24px $lightgrey;
+$box-shadow-solid: 0.2rem 0.2rem $text-color;
+$text-shadow: 1px 1px $text-color;

@@ -7,10 +7,76 @@ body {
 body {
     box-sizing: border-box;
     margin: 0;
-    background-color: $white;
-    background-color: $blue;
+    background-color: $red;
     // cursor: none;
 }
+
+.layout__container {
+    // height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main {
+    // width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flex_wrapper {
+    width: 100%;
+    display: flex;
+    // justify-content: space-between;
+
+    .heading_container {
+        margin-top: 1rem;
+        width: 30%;
+        // width: calc(min(500px, 90vw));
+    }
+    .about {
+        background-color: $background-color; 
+    }
+    .content_container {
+        width: 70%;
+        // width: calc(min(1000px, 90vw));
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+
+        section {
+            // width: calc(min(800px, 80vw));
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+        
+            p{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .flex_wrapper {
+        flex-direction: column;
+        align-items: center;
+        .heading_container {
+            width: 90%;
+        }
+        .content_container {
+            width: 90%;
+        }
+    }
+    
+}
+
+
 
 // #invertedcursor {
 //     position: absolute;
@@ -26,49 +92,6 @@ body {
 //     transition: transform .2s;
 // }
 
-.layout__container {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-main {
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-section {
-    width: calc(min(800px, 80vw));
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-
-    padding: 1rem;
-
-    div {
-        display: flex;
-        justify-content: center;
-    }
-
-    p{
-        width: 100%;
-    }
-}
-
-.img_container {
-    width: 20%;
-    height: fit-content;
-    align-self: center;
-}
-
-.content__wrapper {
-    background-color: $background-color;
-}
 
 
 
