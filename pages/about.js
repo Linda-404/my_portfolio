@@ -166,8 +166,7 @@ export default function About() {
                   <p>
                     I´m looking for a place were I can continue to grow and be
                     creative. Where I can be part of solving problems and design
-                    great solutions for the users in mind. A place were there is
-                    room for learning
+                    great solutions for the users in mind.
                   </p>
                   {/* <p>The opportunity to build on my skills and </p> */}
                 </div>
