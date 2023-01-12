@@ -13,6 +13,7 @@ import Footer from "../components/layout/Footer";
 import ArtsyImg from "../public/images/Artsy_Design.png";
 import GoFishImg from "../public/images/GoFish_Design.png";
 import SuckerPunchImg from "../public/images/SuckerPunch_Design.png";
+import BicImg from "../public/images/Badinfluencecoder_Design.png";
 import SpoilrImg from "../public/images/screenshot_spoilralert.png";
 import BimImg from "../public/images/screenshot_bim_blog.png";
 import WitchImg from "../public/images/screenshot_witchescaultron.png";
@@ -51,6 +52,9 @@ export default function Home() {
                 </div>
               </div>
 
+              <div className="card__design">
+                <Image src={BicImg} alt="Badinfluencecoder xd design" />
+              </div>
               <div className="card__design">
                 <Image src={ArtsyImg} alt="Artsy xd design" />
               </div>
