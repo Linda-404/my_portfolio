@@ -9,7 +9,9 @@
     // font-size: clamp(4.5rem, 25vw, 15rem);
     margin: 0;
     line-height: 0.7;
-    color: $pink;
+    color: $white;
+    color: $darkbrown;
+    text-shadow: $text-shadow;
 }
 
 .index_h1 {
@@ -59,7 +61,7 @@ h6 {
     font-size: clamp(0.5rem, 2vw, 0.8rem);
     font-weight: 300;
     margin: 0;
-    color: $pink;
+    color: $white;
 }
 
 p {
