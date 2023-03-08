@@ -8,6 +8,7 @@ import SubTitle from "../components/SubTitle";
 import Paragraph from "../components/Paragraph";
 import DoodleCasette from "../public/images/doodle_casette.png";
 import Footer from "../components/layout/Footer";
+import { motion } from "framer-motion";
 
 // import images
 import ArtsyImg from "../public/images/Artsy_Design.png";
@@ -26,7 +27,11 @@ export default function Home() {
     <Layout>
       <Head title="Projects" />
       <Header />
-      <main>
+      <motion.main
+        initial={{ x: 100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.75 }}
+      >
         <div className="flex_wrapper">
           <div className="heading_container">
             <h1>
@@ -311,7 +316,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </main>
+      </motion.main>
       <Footer />
     </Layout>
   );

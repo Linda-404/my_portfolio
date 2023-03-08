@@ -11,13 +11,18 @@ import DoodleLightning from "../public/images/doodle_lightning.png";
 import DoodlePen from "../public/images/doodle_pen.png";
 import DoodleScribble from "../public/images/doodle_scribble.png";
 import HireMeme from "../public/images/hire_me.jpg";
+import { motion } from "framer-motion";
 
 export default function About() {
   return (
     <Layout>
       <Head title="About Me" />
       <Header />
-      <main>
+      <motion.main
+        initial={{ x: 100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.75 }}
+      >
         <div className="flex_wrapper">
           <div className="heading_container">
             <h1>
@@ -183,7 +188,7 @@ export default function About() {
             </section>
           </div>
         </div>
-      </main>
+      </motion.main>
       <Footer />
     </Layout>
   );

@@ -8,6 +8,7 @@ import Arrow from "../public/images/arrow_down.png";
 import Star from "../public/images/icon_staroflight.png";
 import Footer from "../components/layout/Footer";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 // document.body.onmousemove = function (e) {
 //   document.documentElement.style.setProperty(
@@ -29,7 +30,14 @@ export default function Home() {
       <main>
         {/* <Image src={Arrow} alt="arrow" width="50" height="100" /> */}
         <div className="index_wrapper">
-          <div className="index_container">
+          <motion.div
+            // initial={{ y: 25, opacity: 0 }}
+            // animate={{ y: 0, opacity: 1 }}
+            initial={{ x: 100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.75 }}
+            className="index_container"
+          >
             <h1 className="index_h1">WEB</h1>
             <div className="index_sub">
               <div className="star_container">
@@ -49,7 +57,7 @@ export default function Home() {
               </div>
             </div>
             <h1 className="index_h1">DESIGNER</h1>
-          </div>
+          </motion.div>
           {/* <div className="logo_index__container">
             <Logo src={Logo} id="logo_index" />
           </div> */}

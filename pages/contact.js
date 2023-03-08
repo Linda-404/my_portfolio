@@ -3,13 +3,18 @@ import Head from "../components/layout/Head";
 import Header from "../components/layout/Header";
 import Heading from "../components/Heading";
 import Footer from "../components/layout/Footer";
+import { motion } from "framer-motion";
 
 export default function Contact() {
   return (
     <Layout>
       <Head title="Contact" />
       <Header />
-      <main>
+      <motion.main
+        initial={{ x: 100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.75 }}
+      >
         <div className="flex_wrapper">
           <div className="heading_container">
             <h1>
@@ -35,7 +40,7 @@ export default function Contact() {
             </div>
           </div>
         </div>
-      </main>
+      </motion.main>
       <Footer />
     </Layout>
   );
