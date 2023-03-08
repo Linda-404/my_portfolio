@@ -18,13 +18,14 @@ export default function About() {
     <Layout>
       <Head title="About Me" />
       <Header />
-      <motion.main
-        initial={{ x: 100, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.75 }}
-      >
+      <main>
         <div className="flex_wrapper">
-          <div className="heading_container">
+          <motion.div
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.75 }}
+            className="heading_container"
+          >
             <h1>
               <span>A</span>
               <span>b</span>
@@ -34,9 +35,14 @@ export default function About() {
               <span>M</span>
               <span>e</span>
             </h1>
-          </div>
+          </motion.div>
 
-          <div className="content_container about">
+          <motion.div
+            initial={{ x: 50, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.75 }}
+            className="content_container about"
+          >
             <section>
               {/* <h2>👋🤓✨🤹‍♀️🎨🤡</h2> */}
               <h2>
@@ -186,9 +192,9 @@ export default function About() {
                 />
               </div> */}
             </section>
-          </div>
+          </motion.div>
         </div>
-      </motion.main>
+      </main>
       <Footer />
     </Layout>
   );

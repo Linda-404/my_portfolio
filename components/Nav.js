@@ -1,11 +1,23 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { motion } from "framer-motion";
+import { useState } from "react";
+
+const variants = {
+  open: { x: 0, opacity: 1 },
+  closed: { x: "100%", opacity: 0 },
+};
 
 export default function Nav() {
   const router = useRouter();
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav id="hamburger-nav">
+    <nav
+      // animate={isOpen ? "open" : "closed"}
+      // variants={variants}
+      id="hamburger-nav"
+    >
       <label htmlFor="hamburger">&#9776;</label>
       <input type="checkbox" id="hamburger" />
 

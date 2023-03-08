@@ -10,13 +10,14 @@ export default function Contact() {
     <Layout>
       <Head title="Contact" />
       <Header />
-      <motion.main
-        initial={{ x: 100, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.75 }}
-      >
+      <main>
         <div className="flex_wrapper">
-          <div className="heading_container">
+          <motion.div
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.75 }}
+            className="heading_container"
+          >
             <h1>
               <span>C</span>
               <span>o</span>
@@ -26,8 +27,13 @@ export default function Contact() {
               <span>c</span>
               <span>t</span>
             </h1>
-          </div>
-          <div className="content_container">
+          </motion.div>
+          <motion.div
+            initial={{ x: 50, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.75 }}
+            className="content_container"
+          >
             <div className="contact_wrapper">
               <ul className="contact_list">
                 <li>
@@ -38,9 +44,9 @@ export default function Contact() {
                 <li>📧 linda.ellekari@gmail.com</li>
               </ul>
             </div>
-          </div>
+          </motion.div>
         </div>
-      </motion.main>
+      </main>
       <Footer />
     </Layout>
   );

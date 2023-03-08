@@ -27,13 +27,14 @@ export default function Home() {
     <Layout>
       <Head title="Projects" />
       <Header />
-      <motion.main
-        initial={{ x: 100, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.75 }}
-      >
+      <main>
         <div className="flex_wrapper">
-          <div className="heading_container">
+          <motion.div
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.75 }}
+            className="heading_container"
+          >
             <h1>
               <span>P</span>
               <span>r</span>
@@ -44,8 +45,14 @@ export default function Home() {
               <span>t</span>
               <span>s</span>
             </h1>
-          </div>
-          <div className="content_container">
+          </motion.div>
+
+          <motion.div
+            initial={{ x: 50, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.75 }}
+            className="content_container"
+          >
             <div className="card__container">
               <div className="card_title">
                 <div className="star_container">
@@ -314,9 +321,9 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
-      </motion.main>
+      </main>
       <Footer />
     </Layout>
   );

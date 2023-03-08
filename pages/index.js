@@ -33,8 +33,8 @@ export default function Home() {
           <motion.div
             // initial={{ y: 25, opacity: 0 }}
             // animate={{ y: 0, opacity: 1 }}
-            initial={{ x: 100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.75 }}
             className="index_container"
           >
