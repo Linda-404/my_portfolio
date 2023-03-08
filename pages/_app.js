@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }) {
         animate="animateState"
         exit="exitState"
         transition={{
-          duration: 0.75,
+          duration: 0.2,
         }}
         variants={{
           initialState: {
@@ -21,7 +21,9 @@ function MyApp({ Component, pageProps }) {
           animateState: {
             opacity: 1,
           },
-          exitState: {},
+          exitState: {
+            opacity: 1,
+          },
         }}
       >
         <Component {...pageProps} />
