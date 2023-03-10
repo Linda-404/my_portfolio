@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const variants = {
   open: { y: 0, opacity: 1, transition: 0.75 },
-  closed: { y: "-100vw", opacity: 0, transition: 0.75 },
+  closed: { y: "-100vh", opacity: 0, transition: 0.75 },
 };
 
 const route = ["/", "/about", "/projects", "/contact"];
