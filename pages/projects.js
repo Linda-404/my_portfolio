@@ -30,9 +30,9 @@ export default function Home() {
       <main>
         <div className="flex_wrapper">
           <motion.div
-            initial={{ y: 50, opacity: 0 }}
+            initial={{ y: "10vh", opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.75 }}
+            transition={{ duration: 0.75, type: "tween" }}
             className="heading_container"
           >
             <h1>

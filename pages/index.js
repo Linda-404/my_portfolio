@@ -33,8 +33,8 @@ export default function Home() {
           <motion.div
             // initial={{ y: 25, opacity: 0 }}
             // animate={{ y: 0, opacity: 1 }}
-            initial={{ x: "20vw", opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
+            initial={{ y: "20vh", opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.75, type: "spring", stiffness: 80 }}
             className="index_container"
           >
@@ -46,7 +46,7 @@ export default function Home() {
               <motion.h6
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 0.85, delay: 0.75 }}
+                transition={{ duration: 0.85, delay: 1 }}
               >
                 Visual
               </motion.h6>
@@ -56,7 +56,7 @@ export default function Home() {
               <motion.h6
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 0.85, delay: 0.85 }}
+                transition={{ duration: 0.85, delay: 1.5 }}
               >
                 Interaction
               </motion.h6>
@@ -66,7 +66,7 @@ export default function Home() {
               <motion.h6
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 0.85, delay: 0.95 }}
+                transition={{ duration: 0.85, delay: 2 }}
               >
                 Creative
               </motion.h6>
