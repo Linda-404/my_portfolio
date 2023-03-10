@@ -15,7 +15,7 @@
 @import "partials/typography";
 @import "partials/base";
 @import "partials/header";
-@import "partials/nav";
+// @import "partials/nav";
 @import "partials/dialog";
 @import "partials/footer";
 @import "partials/card";
@@ -41,5 +41,55 @@
     width: calc(min(20px, 2vw));
     display: flex;
     align-items: center;
+}
+
+nav {
+
+    ul {
+        background-color: $pink-opacity;
+        backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-evenly;
+        justify-content: space-around;
+        height: 12rem;
+        margin-top: 0;
+    }
+    li {
+        // background-color: black;
+        // margin-top: 0.5rem;
+        // margin-bottom: 0.5rem;
+        margin-right: 1rem;
+        // width: 100%;
+    }
+    a {
+        // background-color: $pink-opacity;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        // display: flex;
+        // flex-direction: column;
+        // align-items: flex-end;
+    }
+    
+}
+.navbtn {
+    // background-image: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+    background-color: $pink-opacity;
+    backdrop-filter: blur(10px);
+    // border-top: 3px solid $pink;
+    // border-left: 3px solid $pink;
+    // border-right: 3px solid $pink;
+    // border-bottom: 3px solid $pink;
+    border: transparent;
+    border-radius: 50%;
+    box-shadow: none;
+    color: $white;
+
+    padding: 20px 10px ;
+}
+
+.active {
+    color: $magenta;
 }
 

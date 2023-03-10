@@ -17,11 +17,11 @@ export default function About() {
   return (
     <Layout>
       <Head title="About Me" />
-      <Header />
+      {/* <Header /> */}
       <main>
         <div className="flex_wrapper">
           <motion.div
-            initial={{ y: 50, opacity: 0 }}
+            initial={{ y: "20vw", opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.75 }}
             className="heading_container"
@@ -38,7 +38,7 @@ export default function About() {
           </motion.div>
 
           <motion.div
-            initial={{ x: 50, opacity: 0 }}
+            initial={{ x: "20vw", opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.75 }}
             className="content_container about"

@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <Layout>
       <Head title="Home" />
-      <Header />
+      {/* <Header /> */}
       {/* <div id="invertedcursor"></div> */}
       <main>
         {/* <Image src={Arrow} alt="arrow" width="50" height="100" /> */}
@@ -33,9 +33,9 @@ export default function Home() {
           <motion.div
             // initial={{ y: 25, opacity: 0 }}
             // animate={{ y: 0, opacity: 1 }}
-            initial={{ y: 50, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.75 }}
+            initial={{ x: "20vw", opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.75, type: "spring", stiffness: 80 }}
             className="index_container"
           >
             <h1 className="index_h1">WEB</h1>
@@ -43,15 +43,33 @@ export default function Home() {
               <div className="star_container">
                 <Image src={Star} alt="icon star of light" />
               </div>
-              <h6>Visual</h6>
+              <motion.h6
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.85, delay: 0.75 }}
+              >
+                Visual
+              </motion.h6>
               <div className="star_container">
                 <Image src={Star} alt="icon star of light" />
               </div>
-              <h6>Interaction</h6>
+              <motion.h6
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.85, delay: 0.85 }}
+              >
+                Interaction
+              </motion.h6>
               <div className="star_container">
                 <Image src={Star} alt="icon star of light" />
               </div>
-              <h6>Creative</h6>
+              <motion.h6
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.85, delay: 0.95 }}
+              >
+                Creative
+              </motion.h6>
               <div className="star_container">
                 <Image src={Star} alt="icon star of light" />
               </div>

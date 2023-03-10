@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <Layout>
       <Head title="Projects" />
-      <Header />
+      {/* <Header /> */}
       <main>
         <div className="flex_wrapper">
           <motion.div
@@ -64,18 +64,42 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="card__design">
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+                className="card__design"
+              >
                 <Image src={BicImg} alt="Badinfluencecoder xd design" />
-              </div>
-              <div className="card__design">
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+                className="card__design"
+              >
                 <Image src={ArtsyImg} alt="Artsy xd design" />
-              </div>
-              <div className="card__design">
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+                className="card__design"
+              >
                 <Image src={GoFishImg} alt="Go fish xd design" />
-              </div>
-              <div className="card__design">
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+                // viewport={{ once: true }}
+                className="card__design"
+              >
                 <Image src={SuckerPunchImg} alt="Sucker punch xd design" />
-              </div>
+              </motion.div>
             </div>
 
             <div className="card__container">
@@ -89,7 +113,12 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="card">
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+                className="card"
+              >
                 <div className="card__content">
                   <Image
                     src={SpoilrImg}
@@ -136,9 +165,14 @@ export default function Home() {
                     </a>
                   </div>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className="card">
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+                className="card"
+              >
                 <div className="card__content">
                   <Image
                     src={BimImg}
@@ -182,9 +216,14 @@ export default function Home() {
                     </a>
                   </div>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className="card">
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+                className="card"
+              >
                 <div className="card__content">
                   <Image
                     src={StyleguideImg}
@@ -225,9 +264,14 @@ export default function Home() {
                     </a>
                   </div>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className="card">
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+                className="card"
+              >
                 <div className="card__content">
                   <Image
                     src={WitchImg}
@@ -271,9 +315,14 @@ export default function Home() {
                     </a>
                   </div>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className="card">
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+                className="card"
+              >
                 <div className="card__content">
                   <Image
                     src={PeezyImg}
@@ -319,7 +368,7 @@ export default function Home() {
                     </a>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </motion.div>
         </div>

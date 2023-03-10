@@ -1,9 +1,11 @@
 header {
     // background-color: $red;
-    background-image: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+    // background-image: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+    background-color: $pink-opacity;
+    backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
-    border-bottom: 3px solid $pink;
+    // border-bottom: 3px solid $pink;
     height: 2.5rem;
     height: calc(min(3rem, 15vw));
     height: calc(min(2.5rem, 15vw));

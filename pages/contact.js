@@ -9,7 +9,7 @@ export default function Contact() {
   return (
     <Layout>
       <Head title="Contact" />
-      <Header />
+      {/* <Header /> */}
       <main>
         <div className="flex_wrapper">
           <motion.div

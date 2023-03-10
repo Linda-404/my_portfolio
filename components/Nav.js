@@ -21,7 +21,12 @@ export default function Nav() {
       <label htmlFor="hamburger">&#9776;</label>
       <input type="checkbox" id="hamburger" />
 
-      <div id="nav-items">
+      <motion.div
+        // initial={{ x: "100vw", opacity: 0 }}
+        // animate={{ x: 0, opacity: 1 }}
+        // transition={{ duration: 1 }}
+        id="nav-items"
+      >
         <Link href="/">
           <a className={router.pathname == "/" ? "active" : ""}>Home.</a>
         </Link>
@@ -38,7 +43,7 @@ export default function Nav() {
             Contact.
           </a>
         </Link>
-      </div>
+      </motion.div>
     </nav>
   );
 }

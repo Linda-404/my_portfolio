@@ -5,6 +5,8 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import Logo from "../../public/images/logo.svg";
 
+import MenuNav from "../nav/MenuNav";
+
 export default function Header() {
   const router = useRouter();
 
@@ -18,7 +20,8 @@ export default function Header() {
         </Link>
         <h6>Linda Nilsson</h6>
       </div>
-      <Nav />
+      {/* <Nav /> */}
+      <MenuNav />
     </header>
   );
 }
