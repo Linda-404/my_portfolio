@@ -1,12 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
 import Layout from "../components/layout/Layout";
-import Header from "../components/layout/Header";
-import Heading from "../components/Heading";
 import Title from "../components/Title";
 import SubTitle from "../components/SubTitle";
 import Paragraph from "../components/Paragraph";
-import DoodleCasette from "../public/images/doodle_casette.png";
 import Footer from "../components/layout/Footer";
 import { motion } from "framer-motion";
 
@@ -22,7 +19,7 @@ import PeezyImg from "../public/images/screenshot_peezy.png";
 import StyleguideImg from "../public/images/screenshot_styleguide.png";
 import Star from "../public/images/icon_staroflight.png";
 
-const headingvariants = {
+const headingVariants = {
   hidden: {
     y: "10vh",
     opacity: 0,
@@ -30,11 +27,11 @@ const headingvariants = {
   visible: {
     y: 0,
     opacity: 1,
-    transition: { duration: 0.75, type: "tween" },
+    transition: { duration: 0.75, type: "spring" },
   },
 };
 
-const contentvariants = {
+const contentVariants = {
   hidden: {
     x: "20vw",
     opacity: 0,
@@ -42,11 +39,11 @@ const contentvariants = {
   visible: {
     x: 0,
     opacity: 1,
-    transition: { duration: 0.75, type: "tween" },
+    transition: { duration: 0.75, type: "spring" },
   },
 };
 
-const cardvariants = {
+const cardVariants = {
   hidden: {
     opacity: 0,
   },
@@ -56,15 +53,21 @@ const cardvariants = {
   },
 };
 
+const mainVariants = {
+  exit: {
+    x: "-100vw",
+    transition: { ease: "easeInOut" },
+  },
+};
+
 export default function Projects() {
   return (
     <Layout>
       <Head title="Projects" />
-      {/* <Header /> */}
-      <main>
+      <motion.main variants={mainVariants} exit="exit">
         <div className="flex_wrapper">
           <motion.div
-            variants={headingvariants}
+            variants={headingVariants}
             initial="hidden"
             animate="visible"
             className="heading_container"
@@ -82,7 +85,7 @@ export default function Projects() {
           </motion.div>
 
           <motion.div
-            variants={contentvariants}
+            variants={contentVariants}
             initial="hidden"
             animate="visible"
             className="content_container"
@@ -99,7 +102,7 @@ export default function Projects() {
               </div>
 
               <motion.div
-                variants={cardvariants}
+                variants={cardVariants}
                 initial="hidden"
                 whileInView="visible"
                 className="card__design"
@@ -108,7 +111,7 @@ export default function Projects() {
               </motion.div>
 
               <motion.div
-                variants={cardvariants}
+                variants={cardVariants}
                 initial="hidden"
                 whileInView="visible"
                 className="card__design"
@@ -117,7 +120,7 @@ export default function Projects() {
               </motion.div>
 
               <motion.div
-                variants={cardvariants}
+                variants={cardVariants}
                 initial="hidden"
                 whileInView="visible"
                 className="card__design"
@@ -126,7 +129,7 @@ export default function Projects() {
               </motion.div>
 
               <motion.div
-                variants={cardvariants}
+                variants={cardVariants}
                 initial="hidden"
                 whileInView="visible"
                 className="card__design"
@@ -147,7 +150,7 @@ export default function Projects() {
               </div>
 
               <motion.div
-                variants={cardvariants}
+                variants={cardVariants}
                 initial="hidden"
                 whileInView="visible"
                 className="card"
@@ -201,7 +204,7 @@ export default function Projects() {
               </motion.div>
 
               <motion.div
-                variants={cardvariants}
+                variants={cardVariants}
                 initial="hidden"
                 whileInView="visible"
                 className="card"
@@ -252,7 +255,7 @@ export default function Projects() {
               </motion.div>
 
               <motion.div
-                variants={cardvariants}
+                variants={cardVariants}
                 initial="hidden"
                 whileInView="visible"
                 className="card"
@@ -300,7 +303,7 @@ export default function Projects() {
               </motion.div>
 
               <motion.div
-                variants={cardvariants}
+                variants={cardVariants}
                 initial="hidden"
                 whileInView="visible"
                 className="card"
@@ -351,7 +354,7 @@ export default function Projects() {
               </motion.div>
 
               <motion.div
-                variants={cardvariants}
+                variants={cardVariants}
                 initial="hidden"
                 whileInView="visible"
                 className="card"
@@ -405,7 +408,7 @@ export default function Projects() {
             </div>
           </motion.div>
         </div>
-      </main>
+      </motion.main>
       <Footer />
     </Layout>
   );

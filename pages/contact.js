@@ -1,11 +1,9 @@
 import Layout from "../components/layout/Layout";
 import Head from "../components/layout/Head";
-import Header from "../components/layout/Header";
-import Heading from "../components/Heading";
 import Footer from "../components/layout/Footer";
 import { motion } from "framer-motion";
 
-const headingvariants = {
+const headingVariants = {
   hidden: {
     y: "10vh",
     opacity: 0,
@@ -13,11 +11,11 @@ const headingvariants = {
   visible: {
     y: 0,
     opacity: 1,
-    transition: { duration: 0.75, type: "tween" },
+    transition: { duration: 0.75, type: "spring" },
   },
 };
 
-const contentvariants = {
+const contentVariants = {
   hidden: {
     x: "20vw",
     opacity: 0,
@@ -25,7 +23,14 @@ const contentvariants = {
   visible: {
     x: 0,
     opacity: 1,
-    transition: { duration: 0.75, type: "tween" },
+    transition: { duration: 0.75, type: "spring" },
+  },
+};
+
+const mainVariants = {
+  exit: {
+    x: "-100vw",
+    transition: { ease: "easeInOut" },
   },
 };
 
@@ -33,11 +38,10 @@ export default function Contact() {
   return (
     <Layout>
       <Head title="Contact" />
-      {/* <Header /> */}
-      <main>
+      <motion.main variants={mainVariants} exit="exit">
         <div className="flex_wrapper">
           <motion.div
-            variants={headingvariants}
+            variants={headingVariants}
             initial="hidden"
             animate="visible"
             className="heading_container"
@@ -53,7 +57,7 @@ export default function Contact() {
             </h1>
           </motion.div>
           <motion.div
-            variants={contentvariants}
+            variants={contentVariants}
             initial="hidden"
             animate="visible"
             className="content_container"
@@ -70,7 +74,7 @@ export default function Contact() {
             </div>
           </motion.div>
         </div>
-      </main>
+      </motion.main>
       <Footer />
     </Layout>
   );

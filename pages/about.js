@@ -1,19 +1,13 @@
 import Layout from "../components/layout/Layout";
 import Head from "../components/layout/Head";
-import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
+import { motion } from "framer-motion";
 
 // import images
 import Image from "next/image";
-import Stain from "../public/images/coffee_stain.png";
-import DoodleArrow from "../public/images/doodle_arrow.png";
-import DoodleLightning from "../public/images/doodle_lightning.png";
-import DoodlePen from "../public/images/doodle_pen.png";
-import DoodleScribble from "../public/images/doodle_scribble.png";
 import HireMeme from "../public/images/hire_me.jpg";
-import { motion } from "framer-motion";
 
-const headingvariants = {
+const headingVariants = {
   hidden: {
     y: "10vh",
     opacity: 0,
@@ -21,11 +15,11 @@ const headingvariants = {
   visible: {
     y: 0,
     opacity: 1,
-    transition: { duration: 0.75, type: "tween" },
+    transition: { duration: 0.75, type: "spring" },
   },
 };
 
-const contentvariants = {
+const contentVariants = {
   hidden: {
     x: "20vw",
     opacity: 0,
@@ -33,7 +27,14 @@ const contentvariants = {
   visible: {
     x: 0,
     opacity: 1,
-    transition: { duration: 0.75, type: "tween" },
+    transition: { duration: 0.75, type: "spring" },
+  },
+};
+
+const mainVariants = {
+  exit: {
+    x: "-100vw",
+    transition: { ease: "easeInOut" },
   },
 };
 
@@ -41,11 +42,10 @@ export default function About() {
   return (
     <Layout>
       <Head title="About Me" />
-      {/* <Header /> */}
-      <main>
+      <motion.main variants={mainVariants} exit="exit">
         <div className="flex_wrapper">
           <motion.div
-            variants={headingvariants}
+            variants={headingVariants}
             initial="hidden"
             animate="visible"
             className="heading_container"
@@ -62,7 +62,7 @@ export default function About() {
           </motion.div>
 
           <motion.div
-            variants={contentvariants}
+            variants={contentVariants}
             initial="hidden"
             animate="visible"
             className="content_container about"
@@ -218,7 +218,7 @@ export default function About() {
             </section>
           </motion.div>
         </div>
-      </main>
+      </motion.main>
       <Footer />
     </Layout>
   );

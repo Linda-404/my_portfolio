@@ -8,23 +8,23 @@ function MyApp({ Component, pageProps }) {
     <AnimatePresence mode="wait">
       <motion.div
         key={router.route}
-        initial="initialState"
-        animate="animateState"
-        exit="exitState"
-        transition={{
-          duration: 0.2,
-        }}
-        variants={{
-          initialState: {
-            opacity: 1,
-          },
-          animateState: {
-            opacity: 1,
-          },
-          exitState: {
-            opacity: 1,
-          },
-        }}
+        // initial="initialState"
+        // animate="animateState"
+        // exit="exitState"
+        // transition={{
+        //   duration: 0.2,
+        // }}
+        // variants={{
+        //   initialState: {
+        //     opacity: 1,
+        //   },
+        //   animateState: {
+        //     opacity: 1,
+        //   },
+        //   exitState: {
+        //     opacity: 1,
+        //   },
+        // }}
       >
         <Component {...pageProps} />
       </motion.div>
