@@ -7,7 +7,8 @@ export default function Head({ title = "" }) {
         {title}
         {title ? " | " : ""}portfolio
       </title>
-      <link rel="icon" href="/favicon.ico" />
+      {/* <link rel="icon" href="/favicon.ico" /> */}
+      <link rel="icon" href="/logo_white.ico" />
     </NextHead>
   );
 }
