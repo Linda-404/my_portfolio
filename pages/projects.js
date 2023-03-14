@@ -22,7 +22,41 @@ import PeezyImg from "../public/images/screenshot_peezy.png";
 import StyleguideImg from "../public/images/screenshot_styleguide.png";
 import Star from "../public/images/icon_staroflight.png";
 
-export default function Home() {
+const headingvariants = {
+  hidden: {
+    y: "10vh",
+    opacity: 0,
+  },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: { duration: 0.75, type: "tween" },
+  },
+};
+
+const contentvariants = {
+  hidden: {
+    x: "20vw",
+    opacity: 0,
+  },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: { duration: 0.75, type: "tween" },
+  },
+};
+
+const cardvariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: { duration: 0.5 },
+  },
+};
+
+export default function Projects() {
   return (
     <Layout>
       <Head title="Projects" />
@@ -30,9 +64,9 @@ export default function Home() {
       <main>
         <div className="flex_wrapper">
           <motion.div
-            initial={{ y: "10vh", opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.75, type: "tween" }}
+            variants={headingvariants}
+            initial="hidden"
+            animate="visible"
             className="heading_container"
           >
             <h1>
@@ -48,9 +82,9 @@ export default function Home() {
           </motion.div>
 
           <motion.div
-            initial={{ x: 50, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.75 }}
+            variants={contentvariants}
+            initial="hidden"
+            animate="visible"
             className="content_container"
           >
             <div className="card__container">
@@ -65,37 +99,36 @@ export default function Home() {
               </div>
 
               <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.5 }}
+                variants={cardvariants}
+                initial="hidden"
+                whileInView="visible"
                 className="card__design"
               >
                 <Image src={BicImg} alt="Badinfluencecoder xd design" />
               </motion.div>
 
               <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.5 }}
+                variants={cardvariants}
+                initial="hidden"
+                whileInView="visible"
                 className="card__design"
               >
                 <Image src={ArtsyImg} alt="Artsy xd design" />
               </motion.div>
 
               <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.5 }}
+                variants={cardvariants}
+                initial="hidden"
+                whileInView="visible"
                 className="card__design"
               >
                 <Image src={GoFishImg} alt="Go fish xd design" />
               </motion.div>
 
               <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.5 }}
-                // viewport={{ once: true }}
+                variants={cardvariants}
+                initial="hidden"
+                whileInView="visible"
                 className="card__design"
               >
                 <Image src={SuckerPunchImg} alt="Sucker punch xd design" />
@@ -114,9 +147,9 @@ export default function Home() {
               </div>
 
               <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.5 }}
+                variants={cardvariants}
+                initial="hidden"
+                whileInView="visible"
                 className="card"
               >
                 <div className="card__content">
@@ -168,9 +201,9 @@ export default function Home() {
               </motion.div>
 
               <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.5 }}
+                variants={cardvariants}
+                initial="hidden"
+                whileInView="visible"
                 className="card"
               >
                 <div className="card__content">
@@ -219,9 +252,9 @@ export default function Home() {
               </motion.div>
 
               <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.5 }}
+                variants={cardvariants}
+                initial="hidden"
+                whileInView="visible"
                 className="card"
               >
                 <div className="card__content">
@@ -267,9 +300,9 @@ export default function Home() {
               </motion.div>
 
               <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.5 }}
+                variants={cardvariants}
+                initial="hidden"
+                whileInView="visible"
                 className="card"
               >
                 <div className="card__content">
@@ -318,9 +351,9 @@ export default function Home() {
               </motion.div>
 
               <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.5 }}
+                variants={cardvariants}
+                initial="hidden"
+                whileInView="visible"
                 className="card"
               >
                 <div className="card__content">

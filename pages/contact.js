@@ -5,6 +5,30 @@ import Heading from "../components/Heading";
 import Footer from "../components/layout/Footer";
 import { motion } from "framer-motion";
 
+const headingvariants = {
+  hidden: {
+    y: "10vh",
+    opacity: 0,
+  },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: { duration: 0.75, type: "tween" },
+  },
+};
+
+const contentvariants = {
+  hidden: {
+    x: "20vw",
+    opacity: 0,
+  },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: { duration: 0.75, type: "tween" },
+  },
+};
+
 export default function Contact() {
   return (
     <Layout>
@@ -13,9 +37,9 @@ export default function Contact() {
       <main>
         <div className="flex_wrapper">
           <motion.div
-            initial={{ y: "10vh", opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.75, type: "tween" }}
+            variants={headingvariants}
+            initial="hidden"
+            animate="visible"
             className="heading_container"
           >
             <h1>
@@ -29,9 +53,9 @@ export default function Contact() {
             </h1>
           </motion.div>
           <motion.div
-            initial={{ x: 50, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.75 }}
+            variants={contentvariants}
+            initial="hidden"
+            animate="visible"
             className="content_container"
           >
             <div className="contact_wrapper">

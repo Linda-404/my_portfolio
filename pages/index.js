@@ -21,6 +21,27 @@ import { motion } from "framer-motion";
 //   );
 // };
 
+const headingvariants = {
+  hidden: {
+    y: "20vh",
+    opacity: 0,
+  },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: { duration: 0.75, type: "spring", stiffness: 80 },
+  },
+};
+
+const h6variants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+  },
+};
+
 export default function Home() {
   return (
     <Layout>
@@ -31,11 +52,9 @@ export default function Home() {
         {/* <Image src={Arrow} alt="arrow" width="50" height="100" /> */}
         <div className="index_wrapper">
           <motion.div
-            // initial={{ y: 25, opacity: 0 }}
-            // animate={{ y: 0, opacity: 1 }}
-            initial={{ y: "20vh", opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.75, type: "spring", stiffness: 80 }}
+            variants={headingvariants}
+            initial="hidden"
+            animate="visible"
             className="index_container"
           >
             <h1 className="index_h1">WEB</h1>
@@ -44,8 +63,9 @@ export default function Home() {
                 <Image src={Star} alt="icon star of light" />
               </div>
               <motion.h6
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
+                variants={h6variants}
+                initial="hidden"
+                animate="visible"
                 transition={{ duration: 0.85, delay: 1 }}
               >
                 Visual
@@ -54,8 +74,9 @@ export default function Home() {
                 <Image src={Star} alt="icon star of light" />
               </div>
               <motion.h6
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
+                variants={h6variants}
+                initial="hidden"
+                animate="visible"
                 transition={{ duration: 0.85, delay: 1.5 }}
               >
                 Interaction
@@ -64,8 +85,9 @@ export default function Home() {
                 <Image src={Star} alt="icon star of light" />
               </div>
               <motion.h6
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
+                variants={h6variants}
+                initial="hidden"
+                animate="visible"
                 transition={{ duration: 0.85, delay: 2 }}
               >
                 Creative
